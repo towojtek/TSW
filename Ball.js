@@ -42,7 +42,7 @@ function Ball() {
 		} */
 		//else 
 		if (that.y + Ball.HEIGHT/2 > Pong.HEIGHT || that.y - Ball.HEIGHT/2 < 0 || that.x + Ball.WIDTH/2 > Pong.WIDTH || that.x - Ball.WIDTH/2 <0) {
-			// Uderza w œciane, punkt zdobyty!
+			// Uderza w ï¿½ciane, punkt zdobyty!
 			that.x = Pong.WIDTH/2;
 			that.y = Pong.HEIGHT/2;
 			vx = 0;
@@ -93,11 +93,10 @@ function Ball() {
             vx = -vx;
         }
 		
-        // else = ball didn't collide with paddle
+       
 	}
 	/*
 	var updateVelocity = function(py) {
-		// Change direction (vx) depending on collision point between ball and paddle
 		if (that.y >= py - Paddle2.R1 && that.y <= py + Paddle2.R1) {
             vx = -vx;
         } else if (that.y >= py - Paddle2.R2 && that.y <= py + Paddle2.R2) {
@@ -110,7 +109,7 @@ function Ball() {
             vy += (that.y > py? 3 : -3);
             vx = -vx;
         }
-        // else = ball didn't collide with paddle
+        
 	}*/
 }
 

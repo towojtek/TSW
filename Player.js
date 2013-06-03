@@ -18,12 +18,7 @@ function Player(sid, pid, yPos) {
     	delay = newDelay;
     }
 
-    /*
-    	Return 0 if no delay
-    	Else, return a value between:
-    	delay * (1 - errorPercentage%) to delay * (1 + errorPercentage%)
-    	Note: Math.random() returns a value between 0 to 1
-    */
+   
     this.getDelay = function() {
 		var errorPercentage = 20;
 	    var lowerbound = delay * (1 - errorPercentage/100);
@@ -36,5 +31,5 @@ function Player(sid, pid, yPos) {
 	}
 }
 
-// For node.js require
+
 global.Player = Player;

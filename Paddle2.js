@@ -32,5 +32,5 @@ Paddle2.prototype.move2 = function(newy) {
 		this.y = newy;
 }
 
-// For node.js require
+
 global.Paddle2 = Paddle2;
